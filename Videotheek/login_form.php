@@ -1,20 +1,17 @@
-
+<div id="headertime" id="home" name="home">
+<header class="clearfix">
 				<table>
-	<form action='index.php?content=checklogin' method='post'>
-		<tr>
-			<td>emailadres</td>
-		</tr>
-		<tr>
-			<td><input type='email' name='email'  /></td>
-		</tr>
-		<tr>
-			<td>wachtwoord</td>
-		</tr>
-		<tr>
-			<td><input type='password' name='password'  /></td>
-		</tr>
-		<tr>
-			<td><input type='submit' value='inloggen' name='submit' /></td>
-		</tr>
-	</form>
+	<form role="form" action='index.php?content=checklogin' method='post'>
+                            <div class="form-group">
+                                <label class="control-label" for="exampleInputEmail1">Email address</label>
+                                <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Password</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
 </table>
+</header>
+</div>

@@ -2,23 +2,34 @@
 
 	<li><a href='index.php?content=algemeneHomepage'>Home</a></li>
 <?php
-	if (isset($_SESSION['userrole']))
+
+	if (isset($_SESSION['gebruiker']))
 	{
 		echo "<li><a href='index.php?content=logout'>Logout</a></li>";
-		switch ($_SESSION['userrole'])
+		switch ($_SESSION['rol'])
 		{  
-          	case "administrator":
-				echo "<li><a href=''></a></li>";
-			break;
-            case "eigenaar":
-				echo "<li><a href=''></a></li>";
-			break;
-			case "root":
-				echo "<li><a href=''></a></li>";
-			break;
+            	case "eigenaar":
+				echo "<li><a href='index.php?content=eigenaarHomepage'>
+                        Gegevens
+                        </a>
+                      </li>
+                      <li>
+                        <a href='index.php?content=wijzig_wachtwoord'>
+                        Wachtwoord wijzigen
+                        </a>
+                      </li>";
+				case "root":
+				echo "<li><a href='index.php?content=rootHomepage'>
+                        Gegevens
+                        </a>
+                      </li>
+                      <li>
+                        <a href='index.php?content=wijzig_wachtwoord'>
+                        Wachtwoord wijzigen
+                        </a>
+                      </li>";
 			case "klant":
-				echo "<li>
-                        <a href='index.php?content=klant'>
+				echo "<li><a href='index.php?content=klantHomepage'>
                         Gegevens
                         </a>
                       </li>
@@ -28,9 +39,16 @@
                         </a>
                       </li>";
 			break;
-            case "baliemedewerker":
-                echo "<li><a href=''></a></li>";
-            break;    
+            	case "baliemedewerker":
+				echo "<li><a href='index.php?content=baliemedewerkerHomepage'>
+                        Gegevens
+                        </a>
+                      </li>
+                      <li>
+                        <a href='index.php?content=wijzig_wachtwoord'>
+                        Wachtwoord wijzigen
+                        </a>
+                      </li>";  
 		}
 	}
 	else

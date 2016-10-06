@@ -8,6 +8,6 @@
                             <br>Beschikbaar in HD
                             <br>
                         </p>
-                <a class="btn btn-lg btn-success" href="registreren.html">Probeer nu voor € 0.01</a>
+                <a class="btn btn-lg btn-success" href="index.php?content=register_form">Probeer nu voor € 0.01</a>
 	  		</header>	    
 	    </div>
