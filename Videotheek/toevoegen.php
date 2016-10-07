@@ -23,6 +23,8 @@
 ?>
 
 
+
+
 <!DOCTYPE html>
 
            <div id="headerwrap" id="home" name="home">
@@ -47,11 +49,11 @@
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="exampleInputPassword1">Hoes</label>
-                    <input class="form-control" name="hoes" placeholder="Genre" type="text">
+                    <input class="form-control" name="hoes" placeholder="Hoes" type="text">
                 </div>
 				<div class="form-group">
                     <label class="control-label" for="exampleInputPassword1">Verhuurbaaraantal</label>
-                    <input class="form-control" name="verhuurbaarAantal" placeholder="Genre" type="text">
+                    <input class="form-control" name="verhuurbaarAantal" placeholder="verhuurbaarAantal" type="text">
                 </div>
                      
                     

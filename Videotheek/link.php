@@ -39,10 +39,21 @@
                          <a href='index.php?content=collectie'>
                         Collectie
                         </a>
+                      </li>
+                         <li>
+                         <a href='index.php?content=klachten'>
+                        Klachten
+                        </a>
                       </li>";
 			break;
             	case "baliemedewerker":
 				echo "<li><a href='index.php?content=baliemedewerkerHomepage'>
+                        Gegevens
+                        </a>
+                      </li>";
+            break;
+            	case "koerier":
+				echo "<li><a href='index.php?content=koerierHomepage'>
                         Gegevens
                         </a>
                       </li>";  
