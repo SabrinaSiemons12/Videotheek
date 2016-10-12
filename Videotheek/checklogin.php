@@ -28,6 +28,9 @@
 				case 'eigenaar':
 					header("location:index.php?content=eigenaarHomepage");
 					break;
+                    case 'koerier':
+					header("location:index.php?content=koerierHomepage");
+					break;
 				default :
 					header("location:index.php?content=login_form");			
 			}

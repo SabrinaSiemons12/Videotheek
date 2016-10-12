@@ -185,22 +185,6 @@
 			echo "Uw wachtwoord is succesvol gewijzigd.";
 			header("refresh:4;url=index.php?content=login_form");
 		}
-        
-          public static function delete_by_email($emailadres)
-        {
-                
-        $sql    = "DELETE FROM `gebruiker` WHERE `emailadres` = '" . $emailadres . "'";
-        //$link   = mysqli_connect("SERVERNAME", "USERNAME", "PASSWORD", "DATABASENAME");
-        //$result = mysqli_query($link, $sql);
-                
-       //$yesOrNo = ($result) ? "" : "niet ";
-
-				//echo "Het verwijderen is " . $yesOrNo . "gelukt.<br>
-				//U wordt doorgestuurd naar de vorige pagina";
-        header("refresh:1;url=index.php?content=eigenaarHomepage");
-        
-    }
-        
 		public static function check_old_password($oude_wachtwoord)
 		{
 			$query = "SELECT *

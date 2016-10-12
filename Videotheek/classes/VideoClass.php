@@ -135,7 +135,7 @@ class VideoClass
     {
                 
         $sql    = "DELETE FROM `film` WHERE `id` = '" . $id . "'";
-        $link   = mysqli_connect("SERVERNAME", "USERNAME", "PASSWORD", "DATABASENAME");
+        $link   = mysqli_connect(SERVERNAME, USERNAME, PASSWORD, DATABASENAME);
         $result = mysqli_query($link, $sql);
                 
         $yesOrNo = ($result) ? "" : "niet ";

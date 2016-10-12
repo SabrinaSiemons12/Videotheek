@@ -18,11 +18,7 @@
                        Video's toevoegen
                       </a>
                       </li>
-                      <li>
-                          <a href='index.php?content=verwijderen'>
-                       Video's verwijderen
-                      </a>
-                      </li>";
+                    ";
                 break;
 				case "root":
 				echo "<li><a href='index.php?content=rootHomepage'>
@@ -50,12 +46,22 @@
 				echo "<li><a href='index.php?content=baliemedewerkerHomepage'>
                         Gegevens
                         </a>
+                      </li>
+                        <li>
+                          <a href='index.php?content=verwijderen'>
+                       Video's verwijderen
+                      </a>
                       </li>";
             break;
             	case "koerier":
 				echo "<li><a href='index.php?content=koerierHomepage'>
                         Gegevens
                         </a>
+                      </li>
+                         <li>
+                          <a href='index.php?content=koerier'>
+                       Koerier
+                      </a>
                       </li>";  
 		}
 	}

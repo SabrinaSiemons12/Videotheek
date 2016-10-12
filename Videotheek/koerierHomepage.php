@@ -6,6 +6,20 @@
            <p>Welkom op de pagina voor de koerier.</p>
           
 
-               </header>
-</div>
 
+
+
+
+<?php
+		 require_once("./classes/KoerierClass.php");
+         $query = "SELECT filmtransport.orderregel, filmtransport.ophaaldatum, filmtransport.afleverdatum, filmtransport.check FROM filmtransport";
+         $koerier = KoerierClass::find_by_sql($query);
+         echo "<div class='section'><div class='container'><div class='row'>";
+ 
+        // foreach ($koerier as $value){
+
+?>
+
+
+</header>
+</div>
